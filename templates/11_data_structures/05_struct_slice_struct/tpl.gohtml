@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Parsing .gohtml file and passing struct with slice of struct as field</title>
+</head>
+<body>
+<h1>Parsing .gohtml file and passing struct with slice of struct as field</h1>
+<ul>
+    {{ range .People }}
+    <li>{{ .Name }} is {{ .Age }} years old and has a hobbie of {{ .Hobbie }}, licence status: {{ .IsLicensed }}.</li>
+    {{ end }}
+</ul>
+
+<ul>
+    {{ range .Seasons }}
+    <li>Season is {{ .Name }} and condition is {{ .Condition }}.</li>
+    {{ end }}
+</ul>
+<body>
+</html>

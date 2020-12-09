@@ -1,0 +1,11 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ranging over map.</title>
+</head>
+<body>
+ {{ range $index, $value := . }}
+ {{ $index }} - {{ $value.Name }} is {{ $value.Age }} years old and has a hobbie of {{ $value.Hobbie }}.
+ {{ end }}
+</body>
+</html>

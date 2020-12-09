@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ranging over slice.</title>
+</head>
+<body>
+<ul> 
+    {{ range $index, $value := . }}
+    <li>{{ $index }} - {{ $value }}</li>
+    {{ end }}
+</ul>
+</body>
+</html>
+

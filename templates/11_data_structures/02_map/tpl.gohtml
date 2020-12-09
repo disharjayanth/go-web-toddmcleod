@@ -1,0 +1,13 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ranging over map.</title>
+</head>
+<body>
+<ul>
+ {{ range $key, $value := . }}
+    <li>{{ $key }} - {{ $value }}</li>
+ {{ end }}
+</ul>
+</body>
+</html>
