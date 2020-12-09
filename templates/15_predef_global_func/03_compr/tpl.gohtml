@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>global function index</title>
+</head>
+<body>
+    #EXAMPLE1
+    {{ if gt .Score1 .Score2 }}
+    SCORE1 IS GREATER THAN SCORE2, SCORE1 > SCORE2
+    {{ end }}
+
+    #EXAMPLE2
+    {{ if lt .Score1 .Score2 }}
+    SCORE1 IS LESS THAN SCORE2, SCORE1 < SCORE2
+    {{ end }}
+
+    #EXAMPLE3
+    {{ if eq .Score1 .Score2 }}
+    SCORE1 IS EQUAL TO SCORE2, SCORE1 = SCORE2
+    {{ end }}
+
+    #EXAMPLE4
+    {{ if lt .Score1 8 }}
+    SCORE1 IS LESS THAN 8, SCORE1 < 8
+    {{ end }}
+</body>
+</html>

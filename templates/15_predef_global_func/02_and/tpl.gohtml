@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>global function index</title>
+</head>
+<body>
+    #EXAMPLE 1
+    {{ if . }}
+    {{ . }}
+    {{ end }}
+
+    #EXAMPLE2
+    {{ range . }}
+    {{ . }}
+    {{ end }}
+
+    #EXAMPLE3
+    {{ range . }}
+        {{ if .Name }}
+            {{ .Name }}
+        {{ end }}
+    {{ end }}
+
+    #EXAMPLE4
+    {{ range . }}
+        {{ if and .Name .IsAdmin }}
+            {{ .Name }}
+            {{ .Goodat }}
+            {{ .IsAdmin }}
+        {{ end }}
+    {{ end }}
+</body>
+</html>
