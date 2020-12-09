@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FuncMap type where key is name of func and value is function</title>
+</head>
+<body>
+<h1>FuncMap type where key is name of func and value is function</h1>
+<ul>
+    <li>
+    {{ range . }}
+    {{ uc .Name }}
+    {{ end }}
+    <li>
+</ul>
+
+<ul>
+    <li>
+    {{ range . }}
+    {{ ft .Name }}
+    {{ end }}
+    </li>
+</ul>
+</body>
+<html>

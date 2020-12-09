@@ -1,0 +1,15 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pipeline functions</title>
+</head>
+<body>
+<h1>PipleLine functions: where output of one function is given input to another function and so on.</h1>
+
+    The given argument: {{ . }}
+    The pipeline for 1 functions: {{ . | fdbl }}
+    The pipeline for 2 functions: {{ . | fdbl | fsq }}
+    The pipeline for 3 functions: {{ . | fdbl | fsq | fsqrt }}
+    
+</body>
+</html>
