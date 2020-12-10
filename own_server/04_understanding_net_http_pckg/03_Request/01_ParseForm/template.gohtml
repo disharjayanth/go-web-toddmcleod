@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form values from URL and BODY</title>
+</head>
+<body>
+
+{{ if . }}
+    <main>
+    <p><strong>Form values coming from query string (key: value) par</strong></p>
+    {{ range $key, $value := . }}
+        <p><strong>{{ $key }}</strong></p>
+        <ul>
+        {{ range $value }}
+            <li><em>{{ . }}</em></li>
+        {{ end }}
+        </ul>
+    {{ end }}
+    </main>
+{{ end }}
+
+<form action="/" method="POST">
+    <input type="text" name="fname" placeholder="Enter random name">
+    <input type="submit" name="submit btn" value="submit button clicked!">
+</form>
+
+</body>
+</html>

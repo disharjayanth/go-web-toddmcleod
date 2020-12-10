@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Getting request method, values, URL </title>
+</head>
+<body>
+
+<header>
+    {{ if .Method }}
+    <p>The request is of type: {{ .Method }}</p>
+    {{ end }}
+
+    {{if .URL}}<p>The request URL:</p>
+    <ul>
+        <li>Scheme: {{.URL.Scheme}}</li>
+        <li>Opaque: {{.URL.Opaque}}</li>
+        <li>Host: {{.URL.Host}}</li>
+        <li>Path: {{.URL.Path}}</li>
+        <li>RawPath: {{.URL.RawPath}}</li>
+        <li>ForceQuery: {{.URL.ForceQuery}}</li>
+        <li>RawQuery: {{.URL.RawQuery}}</li>
+        <li>Fragment: {{.URL.Fragment}}</li>
+    </ul>
+    {{end}}
+
+    {{ if .Values }}
+        {{ range $key, $values := .Values }}
+            <p><strong>{{ $key }}</strong></p>
+            <ul>
+                {{ range $values }}
+                    <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    {{ end }}
+</header>
+
+<form action="/" method="POST">
+        <input type="text" name="fname" placeholder="first name" autofocus autocomplete="off">
+        <input type="submit" name="submit-btn" value="onda button">
+</form>
+</body>
+</html>

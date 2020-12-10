@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+                                            HTTP (PROTOCOL)
+---------------------------------------------------------------------------------------------------------------------
+                                            TCP (NETWORK)
+
+
+HTTP is a protocol built on TCP
+TCP is the network where communications take place, TCP is one such network. There are differenct networks.
