@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form submission with 3 fields</title>
+</head>
+<body>
+    <form method="POST" action="/">
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname">
+    <br />
+    <label for="lastname">Last Name:</label>
+    <input type="text" name="lastname">
+    <br />
+    <label for="age">Age: </label>
+    <input type="text" name="age">
+    <br />
+    <label for="sub">Subscrible:</label>
+    <input type="checkbox" name="subscribe">
+    <br />
+    <input type="submit">
+    <br />
+    </form>
+
+    <main>
+    <h2>The value of first name entered is: {{ .FirstName }}</h2>
+    <h2>The value of last name entered is : {{ .LastName }}</h2>
+    <h2>The value of age is: {{ .Age }}</h2>
+    <h2>Subscrible status: {{ .Subscribe }}</h2>
+    </main>
+</body>
+</html>

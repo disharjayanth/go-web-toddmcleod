@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form file upload and read it back</title>
+</head>
+<body>
+<form method="POST" action="/" enctype="multipart/form-data">
+<label>Upload the file to be read:</label>
+<input type="file" name="file">
+<hr />
+<input type="submit">
+</form>
+<main>
+<h2>Content of the form: <br />{{ . }}</h2>
+</main>
+</body>
+</html>

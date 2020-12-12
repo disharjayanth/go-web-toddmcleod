@@ -1,0 +1,16 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Upload File</title>
+</head>
+<body>
+<h1>Upload File - Read, Save, Send it back to client.</h1>
+<form method="POST" action="/" enctype="multipart/form-data">
+<label>Upload File to be saved:</label>
+<input type="file" name="file">
+<input type="submit">
+</form>
+<br />
+<h2>Content of the file stored in server: <br/> {{ . }}</h2>
+</body>
+</html>
