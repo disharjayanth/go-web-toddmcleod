@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User Details</title>
+  </head>
+  <body>
+    <h1>User Details Logged in:</h1>
+    <br />
+    {{ if .FirstName }}
+    <br />
+    User Email: {{ .Email }}
+    <br />
+    User First Name: {{ .FirstName }}
+    <br />
+    User Last Name: {{ .LastName }}
+    <br />
+    User Password: {{ .Password }}
+    <br />
+    {{ else }}
+    <h1>User not registered.</h1>
+    {{ end }}
+  </body>
+</html>

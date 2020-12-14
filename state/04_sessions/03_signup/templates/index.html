@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User Details</title>
+  </head>
+  <body>
+    {{ if .FirstName }}
+    <br />
+    User Email {{ .Email }}
+    <br />
+    User First Name {{ .FirstName }}
+    <br />
+    User Last Name {{ .LastName }}
+    <br />
+    User Password {{ .Password }}
+    <br />
+    {{ else }}
+    <h2><a href="/signup">Sign up</a></h2>
+    {{ end }}
+    <hr />
+    <h2>Go to user details page: <a href="/user">User Details</a></h2>
+  </body>
+</html>
