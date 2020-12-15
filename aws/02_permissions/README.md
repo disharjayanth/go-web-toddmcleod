@@ -23,10 +23,10 @@
 _OR_
 
 For main Binary file:
-scp -i ~/ssh/kp-15-12-2020.pem main user.html ubuntu@ec2-13-233-231-123.ap-south-1.compute.amazonaws.com:goWebServer
+scp -i ~/ssh/kp-15-12-2020.pem main user.html ubuntu@[Your Public DNS]:goWebServer
 
 For templates:
-scp -i ~/ssh/kp-15-12-2020.pem index.html signin.html signup.html user.html ubuntu@ec2-13-233-231-123.ap-south-1.compute.amazonaws.com:goWebServer/templates
+scp -i ~/ssh/kp-15-12-2020.pem index.html signin.html signup.html user.html ubuntu@[Your Public DNS]:goWebServer/templates
 
 1. chmod permissions on your binary
 
