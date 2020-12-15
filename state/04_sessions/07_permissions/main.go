@@ -32,7 +32,7 @@ func main() {
 	http.HandleFunc("/signin", signinPage)
 	http.HandleFunc("/signout", signout)
 	http.Handle("/favicon.ico", http.NotFoundHandler())
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":80", nil)
 }
 
 func mainPage(w http.ResponseWriter, r *http.Request) {

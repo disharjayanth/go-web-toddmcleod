@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User Details</title>
+  </head>
+  <body>
+    {{ if .FirstName }}
+    <h3>FirstName: {{ .FirstName }}</h3>
+    <h3>LastName: {{ .LastName }}</h3>
+    <h3>Email: {{ .Email }}</h3>
+    <h3>Password: {{ .Password }}</h3>
+    {{ else }}
+    <h3>No user information.</h3>
+    {{ end }}
+  </body>
+</html>
