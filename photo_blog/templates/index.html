@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Photo Blog</title>
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script> -->
+  </head>
+  <body>
+    <h1>Photo Blog</h1>
+    <h2>Your images:</h2>
+    {{ range . }}
+    <img src="/public/pics/{{.}}" width="400px" />
+    {{ end}}
+
+    <h2>
+      Upload Pictures (server can handle any file to upload but can only show
+      images):
+    </h2>
+    <form method="POST" enctype="multipart/form-data" action="/">
+      <input type="file" name="uploadPicFile" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
